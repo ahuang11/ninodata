@@ -155,7 +155,6 @@ For nino.csv
 * `*_c` - central
 * `*_anom` - anomaly
 * `*_norm` - standardized
-* Check out the URLs listed in process_nino_ml.csv
 
 ### Notes
 
@@ -165,4 +164,23 @@ Data used to classify ONI is read from https://www.cpc.ncep.noaa.gov/data/indice
 
 One discrepancy was found between AMJ 2011 and JJA 2011; the former webpage lists the SST anomalies as -0.47 and -0.46 respectively which is not less than or equal to the -0.5 threshold, but the latter webpage lists the SST anomalies both as -0.5 which is less than or equal to the -0.5 threshold.
 
-Please report bugs under GitHub issues!
+For nino.csv
+
+Data sources include:
+```
+URLS = {
+    "t300_e": "https://www.pmel.noaa.gov/tao/wwv/data/t300_east.dat",
+    "t300_w": "https://www.pmel.noaa.gov/tao/wwv/data/t300_west.dat",
+    "t300_c": "https://www.pmel.noaa.gov/tao/wwv/data/t300.dat",
+    "wwv_e": "https://www.pmel.noaa.gov/tao/wwv/data/wwv_east.dat",
+    "wwv_w": "https://www.pmel.noaa.gov/tao/wwv/data/wwv_west.dat",
+    "wwv_c": "https://www.pmel.noaa.gov/tao/wwv/data/wwv.dat",
+    "u850_e": "https://www.cpc.ncep.noaa.gov/data/indices/epac850",
+    "u850_w": "https://www.cpc.ncep.noaa.gov/data/indices/wpac850",
+    "u850_c": "https://www.cpc.ncep.noaa.gov/data/indices/cpac850",
+    "olr": "https://www.cpc.ncep.noaa.gov/data/indices/olr",
+    "nino": "https://www.cpc.ncep.noaa.gov/data/indices/sstoi.indices",
+}
+```
+
+Please report bugs or suggestions under GitHub issues!
