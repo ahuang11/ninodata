@@ -147,6 +147,14 @@ For oni.csv
     * else all other cases set `oni` to `neutral`
 
 For nino.csv
+* `t300` - depth averaged temps up from 0 to 300m
+* `wwv` - warm water volume
+* `u850` - 850 mb trade wind index
+* `*_e` - east
+* `*_w` - west
+* `*_c` - central
+* `*_anom` - anomaly
+* `*_norm` - standardized
 * Check out the URLs listed in process_nino_ml.csv
 
 ### Notes
@@ -156,3 +164,5 @@ For oni.csv
 Data used to classify ONI is read from https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt which rounds to the hundreth place, not https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php which rounds to the tenth place. Thus, there will be minor differences in edge cases between this repo's computed ONI and the color coded ONI on the latter webpage.
 
 One discrepancy was found between AMJ 2011 and JJA 2011; the former webpage lists the SST anomalies as -0.47 and -0.46 respectively which is not less than or equal to the -0.5 threshold, but the latter webpage lists the SST anomalies both as -0.5 which is less than or equal to the -0.5 threshold.
+
+Please report bugs under GitHub issues!
