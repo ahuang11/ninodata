@@ -37,7 +37,7 @@ print(df.head(15))
 OR
 
 ```
-df = pd.read_csv('https://raw.githubusercontent.com/ahuang11/oni/master/nino_ml.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/ahuang11/oni/master/nino_ml.csv', index_col=0, parse_dates=True)
 print(df.dropna().head(15))
 
 # output
