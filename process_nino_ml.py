@@ -58,12 +58,13 @@ def process_ewc(key):
                 names=["time", key, f"{key}_anom"],
                 date_parser=lambda x: datetime.datetime.strptime(x, "%Y%m"),
                 parse_dates=True,
-                index_col="time"
+                index_col="time",
             )
             for key in [f"{key}_e", f"{key}_w", f"{key}_c"]
         ],
         axis=1,
     )
+
 
 t300_df = process_ewc("t300")
 wwv_df = process_ewc("wwv")
@@ -77,5 +78,11 @@ nino_df.columns = [
     for i, col in enumerate(nino_df.columns)
 ]
 
-df = pd.concat([t300_df, wwv_df, olr_df, u850_df, nino_df], axis=1)
+df = pd.concat(
+    [
+        df.loc[~df.index.duplicated(keep="last")]
+        for df in [t300_df, wwv_df, olr_df, u850_df, nino_df]
+    ],
+    axis=1,
+)
 df.to_csv("nino_ml.csv")
