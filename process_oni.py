@@ -11,7 +11,7 @@ df.loc[df['anom_c'] >= 0.5, 'threshold'] = 'above'
 
 # cumulatively count how many months stay in same threshold before changing
 df['threshold_group'] = (df['threshold'] != df['threshold'].shift(1)).cumsum()
-df['cumulative'] = df.groupby('threshold_group')['anom_c'].apply(
+df['cumulative'] = df.groupby('threshold_group', group_keys=False)['anom_c'].apply(
     lambda col: (col ** 0).cumsum()).astype(int)
 
 # classify it's a warm (el nino) or cold period (la_nina) based on
@@ -29,7 +29,7 @@ df = df.join(df_class[['ntotal', 'oni']], on='threshold_group').drop(
 df.to_csv('oni.csv', index=False)
 
 # mimic the format of https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php
-pivot_df = df[['season', 'year', 'oni']].pivot('year', 'season', 'oni')
+pivot_df = df[['season', 'year', 'oni']].pivot(index='year', columns='season', values='oni')
 pivot_df = pivot_df[['DJF', 'JFM', 'FMA', 'MAM', 'AMJ', 'MJJ',
                      'JJA', 'JAS', 'ASO', 'SON', 'OND', 'NDJ']]
 pivot_df.to_csv('oni_cpc_table.csv')
