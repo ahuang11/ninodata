@@ -875,6 +875,10 @@ ASO,2022,25.75,-1.01,below,13,17,la_nina
 SON,2022,25.72,-0.99,below,14,17,la_nina
 OND,2022,25.76,-0.92,below,15,17,la_nina
 NDJ,2022,25.8,-0.82,below,16,17,la_nina
-DJF,2023,25.97,-0.67,below,17,17,la_nina
-JFM,2023,26.44,-0.43,between,1,2,neutral
-FMA,2023,27.14,-0.16,between,2,2,neutral
+DJF,2023,25.96,-0.67,below,17,17,la_nina
+JFM,2023,26.44,-0.43,between,1,4,neutral
+FMA,2023,27.15,-0.14,between,2,4,neutral
+MAM,2023,27.85,0.16,between,3,4,neutral
+AMJ,2023,28.31,0.48,between,4,4,neutral
+MJJ,2023,28.43,0.77,above,1,2,neutral
+JJA,2023,28.35,1.06,above,2,2,neutral
