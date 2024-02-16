@@ -18,17 +18,26 @@ URLS = {
 
 
 def process_3in1(key):
-    df = pd.read_fwf(
-        URLS[key],
-        widths=[4] + [6] * 12,
-        delimiter="\s+",
-        skiprows=[0, 1, 2, 3, 54, 55, 56, 57, 58, 108, 109, 110, 111, 1112],
-        header=None,
-        names=["year"] + list(range(1, 13)),
-        na_values=-999.9,
+    print(key)
+    months = list(range(1, 13))
+    df = (
+        pd.read_fwf(
+            URLS[key],
+            widths=[4] + [6] * 12,
+            delimiter="\s+",
+            header=None,
+            names=["year"] + months,
+            na_values=-999.9,
+        )
+        .apply(pd.to_numeric, errors="coerce")
+        .dropna(how="all")
+        .dropna(subset=["year"], how="any")
     )
+    df = df.loc[df["year"] > 1900]
+    df["year"] = df["year"].astype(int)
 
-    indices = [0] + list(df.loc[df["year"] == 2023].index)
+    curr_year = datetime.datetime.now().year
+    indices = [0] + list(df.loc[df["year"] == curr_year].index)
     labels = ["", "_anom", "_norm"]
     dfs = []
     for i, index in enumerate(indices):
@@ -42,6 +51,7 @@ def process_3in1(key):
             sub_df["year"].astype(str) + sub_df["month"].astype(str).str.zfill(2),
             format="%Y%m",
         )
+        sub_df = sub_df.drop_duplicates(subset=["year"], keep="first")
         dfs.append(sub_df.drop(columns=["year", "month"]))
         if i == 2:
             break
@@ -56,7 +66,7 @@ def process_ewc(key):
                 skiprows=6,
                 delimiter="\s+",
                 names=["time", key, f"{key}_anom"],
-                date_parser=lambda x: datetime.datetime.strptime(x, "%Y%m"),
+                date_format="%Y%m",
                 parse_dates=True,
                 index_col="time",
             )

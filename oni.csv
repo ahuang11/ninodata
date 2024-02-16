@@ -880,9 +880,10 @@ JFM,2023,26.44,-0.43,between,1,4,neutral
 FMA,2023,27.15,-0.15,between,2,4,neutral
 MAM,2023,27.85,0.16,between,3,4,neutral
 AMJ,2023,28.31,0.48,between,4,4,neutral
-MJJ,2023,28.42,0.77,above,1,6,el_nino
-JJA,2023,28.36,1.07,above,2,6,el_nino
-JAS,2023,28.28,1.32,above,3,6,el_nino
-ASO,2023,28.32,1.56,above,4,6,el_nino
-SON,2023,28.49,1.78,above,5,6,el_nino
-OND,2023,28.61,1.94,above,6,6,el_nino
+MJJ,2023,28.42,0.77,above,1,7,el_nino
+JJA,2023,28.36,1.07,above,2,7,el_nino
+JAS,2023,28.28,1.32,above,3,7,el_nino
+ASO,2023,28.32,1.56,above,4,7,el_nino
+SON,2023,28.49,1.78,above,5,7,el_nino
+OND,2023,28.6,1.92,above,6,7,el_nino
+NDJ,2023,28.59,1.97,above,7,7,el_nino
