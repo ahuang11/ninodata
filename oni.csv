@@ -889,5 +889,6 @@ OND,2023,28.6,1.92,above,6,11,el_nino
 NDJ,2023,28.57,1.95,above,7,11,el_nino
 DJF,2024,28.43,1.79,above,8,11,el_nino
 JFM,2024,28.36,1.49,above,9,11,el_nino
-FMA,2024,28.44,1.14,above,10,11,el_nino
-MAM,2024,28.43,0.75,above,11,11,el_nino
+FMA,2024,28.43,1.14,above,10,11,el_nino
+MAM,2024,28.4,0.71,above,11,11,el_nino
+AMJ,2024,28.22,0.39,between,1,1,neutral
