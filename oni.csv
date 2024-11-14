@@ -891,4 +891,8 @@ DJF,2024,28.43,1.79,above,8,11,el_nino
 JFM,2024,28.36,1.49,above,9,11,el_nino
 FMA,2024,28.43,1.14,above,10,11,el_nino
 MAM,2024,28.4,0.71,above,11,11,el_nino
-AMJ,2024,28.22,0.39,between,1,1,neutral
+AMJ,2024,28.23,0.4,between,1,5,neutral
+MJJ,2024,27.81,0.15,between,2,5,neutral
+JJA,2024,27.33,0.04,between,3,5,neutral
+JAS,2024,26.85,-0.11,between,4,5,neutral
+ASO,2024,26.55,-0.22,between,5,5,neutral
