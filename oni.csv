@@ -893,8 +893,13 @@ FMA,2024,28.43,1.14,above,10,11,el_nino
 MAM,2024,28.39,0.71,above,11,11,el_nino
 AMJ,2024,28.22,0.39,between,1,7,neutral
 MJJ,2024,27.8,0.15,between,2,7,neutral
-JJA,2024,27.33,0.03,between,3,7,neutral
+JJA,2024,27.33,0.04,between,3,7,neutral
 JAS,2024,26.85,-0.11,between,4,7,neutral
 ASO,2024,26.55,-0.21,between,5,7,neutral
-SON,2024,26.45,-0.26,between,6,7,neutral
-OND,2024,26.32,-0.36,between,7,7,neutral
+SON,2024,26.46,-0.26,between,6,7,neutral
+OND,2024,26.3,-0.37,between,7,7,neutral
+NDJ,2024,26.09,-0.52,below,1,2,neutral
+DJF,2025,26.05,-0.59,below,2,2,neutral
+JFM,2025,26.49,-0.38,between,1,3,neutral
+FMA,2025,27.11,-0.18,between,2,3,neutral
+MAM,2025,27.59,-0.09,between,3,3,neutral
