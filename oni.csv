@@ -898,9 +898,12 @@ JAS,2024,26.85,-0.11,between,4,7,neutral
 ASO,2024,26.55,-0.21,between,5,7,neutral
 SON,2024,26.46,-0.26,between,6,7,neutral
 OND,2024,26.3,-0.37,between,7,7,neutral
-NDJ,2024,26.09,-0.53,below,1,2,neutral
+NDJ,2024,26.09,-0.52,below,1,2,neutral
 DJF,2025,26.05,-0.59,below,2,2,neutral
-JFM,2025,26.49,-0.38,between,1,4,neutral
-FMA,2025,27.11,-0.18,between,2,4,neutral
-MAM,2025,27.6,-0.09,between,3,4,neutral
-AMJ,2025,27.72,-0.11,between,4,4,neutral
+JFM,2025,26.49,-0.38,between,1,7,neutral
+FMA,2025,27.11,-0.18,between,2,7,neutral
+MAM,2025,27.6,-0.09,between,3,7,neutral
+AMJ,2025,27.72,-0.11,between,4,7,neutral
+MJJ,2025,27.54,-0.11,between,5,7,neutral
+JJA,2025,27.1,-0.19,between,6,7,neutral
+JAS,2025,26.64,-0.32,between,7,7,neutral
