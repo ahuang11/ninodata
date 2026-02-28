@@ -836,7 +836,7 @@ MJJ,2019,28.1,0.52,above,10,10,el_nino
 JJA,2019,27.57,0.33,between,1,4,neutral
 JAS,2019,27.1,0.19,between,2,4,neutral
 ASO,2019,26.95,0.23,between,3,4,neutral
-SON,2019,27.06,0.4,between,4,4,neutral
+SON,2019,27.06,0.39,between,4,4,neutral
 OND,2019,27.18,0.58,above,1,5,el_nino
 NDJ,2019,27.17,0.66,above,2,5,el_nino
 DJF,2020,27.14,0.64,above,3,5,el_nino
@@ -908,5 +908,6 @@ MJJ,2025,27.54,-0.04,between,14,17,neutral
 JJA,2025,27.1,-0.14,between,15,17,neutral
 JAS,2025,26.63,-0.28,between,16,17,neutral
 ASO,2025,26.32,-0.4,between,17,17,neutral
-SON,2025,26.16,-0.51,below,1,2,neutral
-OND,2025,26.05,-0.55,below,2,2,neutral
+SON,2025,26.16,-0.51,below,1,3,neutral
+OND,2025,26.05,-0.55,below,2,3,neutral
+NDJ,2025,25.96,-0.55,below,3,3,neutral
