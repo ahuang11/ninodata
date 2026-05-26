@@ -51,7 +51,10 @@ def process_3in1(key):
             sub_df["year"].astype(str) + sub_df["month"].astype(str).str.zfill(2),
             format="%Y%m",
         )
-        sub_df = sub_df.drop_duplicates(subset=["year"], keep="first")
+        # REMOVED: sub_df = sub_df.drop_duplicates(subset=["year"], keep="first")
+        # That line was collapsing monthly data to annual by keeping only
+        # the first month per year.
+        sub_df = sub_df[~sub_df.index.duplicated(keep="last")]  # dedupe on index instead
         dfs.append(sub_df.drop(columns=["year", "month"]))
         if i == 2:
             break
